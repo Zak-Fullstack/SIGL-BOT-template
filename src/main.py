@@ -118,5 +118,5 @@ async def ban(ctx, arg):
 
     await ctx.guild.ban(member)
 
-token = "ODkyODIxNzE1OTcxODY2NjU0.YVSfBA.7Tgsu55PgcNFbXdEgvTvuOILdRY"
+token = "ODkyODIxNzE1OTcxODY2NjU0.YVSfBA._u_qFrGBWqZVBj5vSlBdMg2xaoU"
 bot.run(token)  # Starts the bot
