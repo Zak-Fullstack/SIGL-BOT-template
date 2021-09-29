@@ -110,7 +110,13 @@ async def mute(ctx, arg):
         msg = "Error: " + e
         ctx.send(msg)
 
+@bot.command()
+async def ban(ctx, arg):
+    member = await get_member(ctx, arg)
+    if member == None:
+        return
 
+    await ctx.guild.ban(member)
 
-token = "ODkyODIxNzE1OTcxODY2NjU0.YVSfBA.mxUzmPLMPfu6ePmbJ1iGsfTc-qw"
+token = "ODkyODIxNzE1OTcxODY2NjU0.YVSfBA.7Tgsu55PgcNFbXdEgvTvuOILdRY"
 bot.run(token)  # Starts the bot
